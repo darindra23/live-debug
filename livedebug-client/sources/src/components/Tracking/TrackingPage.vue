@@ -16,10 +16,10 @@
                     <input
                       class="form-control form-control-lg py-2 border-right-0 border"
                       type="search"
-                      value="search"
+                      placeholder="search"
                       id="example-search-input"
                       aria-label="Find by country name"
-                      v-models="searchQuery"
+                      v-model="searchQuery"
                     />
                     <span class="input-group-append">
                       <div class="input-group-text">
@@ -34,7 +34,7 @@
           </div>
 
           <!-- Country Cards-->
-          <TrackingCard v-for="country in filterCountries" :key="country.id" @country="country" />
+          <TrackingCard v-for="country in filterCountries" :key="country.id" :country="country" />
         </div>
       </div>
     </div>

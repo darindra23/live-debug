@@ -64,7 +64,7 @@ export default {
   },
   methods: {
     fetchCountries () {
-      this.store.dispatch('fetchCountries')
+      this.$store.dispatch('fetchCountries')
     }
   },
   created () {

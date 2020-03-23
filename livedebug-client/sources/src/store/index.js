@@ -25,7 +25,7 @@ export default new Vuex.Store({
       state.globals = payload
     },
     FETCH_COUNTRIES (state, payload) {
-      state.countries = state
+      state.countries = payload
     }
   },
   actions: {

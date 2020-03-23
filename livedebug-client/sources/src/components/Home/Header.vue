@@ -64,7 +64,7 @@ export default {
       this.$store.dispatch('fetchGlobals')
     },
     fetchCountries () {
-      this.store.commit('fetchCountries')
+      this.$store.dispatch('fetchCountries')
     }
   },
   created () {
