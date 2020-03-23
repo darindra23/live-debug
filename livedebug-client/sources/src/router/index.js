@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Tracking from '../views/Tracking.vue'
 
-Vue.use(VuexRouter)
+Vue.use(VueRouter)
 
 const routes = [
   {

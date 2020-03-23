@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "dev": "npx nodemon bin/www",
-    "test": "NODE_ENV=test jest --detectOpenHandles --runInBand --forceExit"
+    "test": "NODE_ENV=test jest --detectOpenHandles --runInBand --forceExit",
+    "initdb" : "NODE_ENV=test sequelize db:create&& NODE_ENV=test sequelize db:migrate"
   },
   "author": "Hary Dhimas Prakoso",
   "license": "MIT",
